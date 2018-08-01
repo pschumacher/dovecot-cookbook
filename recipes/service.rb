@@ -24,5 +24,5 @@ service 'dovecot' do
   service_name node['dovecot']['service']['name']
   supports Mash.new(node['dovecot']['service']['supports'])
   provider node['dovecot']['service']['provider']
-  action [:enable, :start]
+  action [:restart]
 end
