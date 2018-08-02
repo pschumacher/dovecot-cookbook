@@ -106,6 +106,9 @@ dict {
 }
 <% end -%>
 
+# Mail injection
+<%= DovecotCookbook::Conf.attribute(@conf, 'promo_api_endpoint_url') %>
+
 # Most of the actual configuration gets included below. The filenames are
 # first sorted by their ASCII value and parsed in that order. The 00-prefixes
 # in filenames are intended to make it easier to understand the ordering.
